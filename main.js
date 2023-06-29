@@ -72,7 +72,7 @@ scene.background = spaceTexture;
 
 //map my image into a cube texture
 
-const tharinduTexture = new THREE.TextureLoader().load('tharindu.jpeg');
+const tharinduTexture = new THREE.TextureLoader().load('./tharindu.jpeg');
 const tharindu = new THREE.Mesh(
     new THREE.BoxGeometry(3,3,3),
     new THREE .MeshBasicMaterial({map: tharinduTexture})
@@ -81,8 +81,8 @@ const tharindu = new THREE.Mesh(
 scene.add(tharindu)
 
 //create a moon
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3,32,32),
